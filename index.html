@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff1f5">
+  <meta name="description" content="A little world made with love.">
+  <title>JEEVIKA'S RITYAA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="app">
+    <header class="topbar">
+      <a href="#" class="brand" aria-label="Home">
+        <span class="brand-heart">♥</span>
+        <span id="brandTitle">JEEVIKA'S RITYAA</span>
+      </a>
+      <span class="top-note" id="topNote">A LITTLE WORLD OF OUR OWN</span>
+    </header>
+
+    <section class="welcome-screen screen active" id="welcomeScreen">
+      <div class="hero-art" aria-hidden="true">
+        <span class="orbit orbit-one"></span>
+        <span class="orbit orbit-two"></span>
+        <span class="hero-heart">♥</span>
+        <span class="float-item float-one">✦</span>
+        <span class="float-item float-two">♡</span>
+        <span class="float-item float-three">✧</span>
+        <span class="float-item float-four">♥</span>
+      </div>
+
+      <p class="eyebrow" id="welcomeEyebrow">A LITTLE SOMETHING FOR MY LOVE</p>
+      <h1 id="welcomeTitle">JEEVIKA'S <em>RITYAA</em></h1>
+      <p class="intro" id="welcomeDescription">
+        BABYYY KO SMILE KARANE KI EK CHHOTI SI KOSHISH
+      </p>
+
+      <button class="primary-button" id="startButton" type="button">
+        <span id="startButtonText">Let's begin</span>
+        <span aria-hidden="true">♡</span>
+      </button>
+
+      <p class="tiny-note" id="welcomeFooter">MADE WITH LOVE, JUST FOR YOU</p>
+    </section>
+
+    <section class="game-screen screen" id="gameScreen" hidden>
+      <div class="game-heading">
+        <p class="eyebrow" id="gameEyebrow">YOUR LITTLE MISSION</p>
+        <h2 id="gameTitle">Catch the love</h2>
+        <p id="gameDescription" class="game-description">
+          Mele saare dil pakad liyo yawr.
+        </p>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-label" id="scoreLabel">HEARTS CAUGHT</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label" id="targetLabel">YOUR GOAL</span>
+          <strong id="targetScore">20</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label" id="timeLabel">TIME LEFT</span>
+          <strong><span id="timeLeft">30</span>s</strong>
+        </div>
+      </div>
+
+      <div class="game-board" id="gameBoard" aria-label="Catch falling hearts game">
+        <div class="board-sky" aria-hidden="true">
+          <span class="board-star star-one">✧</span>
+          <span class="board-star star-two">✦</span>
+          <span class="board-star star-three">·</span>
+        </div>
+        <div class="board-message" id="boardMessage">
+          <span class="board-message-heart">♡</span>
+          <span id="boardMessageText">Ready when you are!</span>
+        </div>
+        <div class="basket" id="basket" aria-label="Heart catcher">
+          <span>♡</span>
+        </div>
+      </div>
+
+      <div class="game-controls">
+        <button class="move-button" id="leftButton" type="button" aria-label="Move left">←</button>
+        <button class="primary-button play-button" id="playButton" type="button">
+          <span id="playButtonText">Start catching</span>
+          <span aria-hidden="true">♥</span>
+        </button>
+        <button class="move-button" id="rightButton" type="button" aria-label="Move right">→</button>
+      </div>
+
+      <p class="control-hint" id="controlHint">Use ← → keys or the buttons to move.</p>
+    </section>
+
+    <section class="result-screen screen" id="resultScreen" hidden>
+      <div class="result-art" aria-hidden="true">
+        <span class="result-sparkle sparkle-one">✦</span>
+        <span class="result-sparkle sparkle-two">✧</span>
+        <div class="result-heart">♥</div>
+      </div>
+      <p class="eyebrow" id="resultEyebrow">A LITTLE NOTE FOR YOU</p>
+      <h2 id="resultTitle">You collected all the love!</h2>
+      <p class="result-message" id="resultMessage">
+        Every little heart comes with a little reminder that you are special.
+      </p>
+      <div class="final-score">
+        <span id="finalScoreLabel">YOUR HEARTS</span>
+        <strong id="finalScore">0</strong>
+      </div>
+      <button class="primary-button" id="replayButton" type="button">
+        <span id="replayButtonText">Play again</span>
+        <span aria-hidden="true">↻</span>
+      </button>
+      <button class="text-button" id="homeButton" type="button">Back to the beginning</button>
+    </section>
+
+    <footer class="site-footer">
+      <span id="footerText">A LITTLE WORLD MADE WITH LOVE</span>
+      <span aria-hidden="true">♥</span>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
